@@ -49,5 +49,5 @@ Route::get('/home', [HomeController::class, 'home'])->middleware('auth')->name('
 
 Route::resource('recipes', RecipeController::class);
 
-
+Route::get('/', [HomeController::class, 'showLogin']);
 
